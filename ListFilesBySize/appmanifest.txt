@@ -1,0 +1,9 @@
+
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>
+
+        <requestedExecutionLevel level="requireAdministrator" uiAccess="false"></requestedExecutionLevel>
+
+        <requestedExecutionLevel level="highestAvailable" uiAccess="false"></requestedExecutionLevel>
+
+
+
