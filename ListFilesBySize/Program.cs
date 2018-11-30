@@ -12,6 +12,7 @@ namespace ListFilesBySize
         static void Main(string[] args)
         {
             var mydir = args[0];
+            //test
 
             Console.WriteLine("My dir is: " + mydir);
 
