@@ -1,10 +1,5 @@
-node {
-	stage 'Checkout'
-		checkout scm
-
-	stage 'Build'
-		bat 'nuget restore ListFilesBySize.sln'
-
-	stage 'Archive'
-		archive 'ListFilesBySize/bin/Debug/**'
+def msbuild =  "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin/MsBuild.exe"
+def exitStatus = bat(returnStatus: true, script: "${msbuild} ListFilesBySize.sln /p:Configuration=Debug /p:Platform=x64")
+if (exitStatus != 0){
+    currentBuild.result = 'FAILURE'
 }
