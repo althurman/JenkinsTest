@@ -5,3 +5,4 @@ def exitStatus = bat(returnStatus: true, script: "${msbuild} ListFilesBySize.sln
 if (exitStatus != 0){
     currentBuild.result = 'FAILURE'
 }
+}
