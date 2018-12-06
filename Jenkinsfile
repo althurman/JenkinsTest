@@ -1,3 +1,7 @@
-echo 'this message is for a pipeline'
+bat '''
+set MSBUILD=C:\\Program Files (x86)\\Microsoft Visual Studio\\2017\\Enterprise\\MSBuild\\15.0\\Bin\\MSBuild.exe
 
-githubNotify description: 'This is a shorted example', targetUrl: 'https://165.88.230.11:8080', status: 'SUCCESS'
+echo **********************************************                   Building ListFilesBySize        ***********************************************
+%MSBUILD% .\\ListFileBySize.sln  /t:Build /p:Configuration=Debug;Platform=x64
+
+'''
