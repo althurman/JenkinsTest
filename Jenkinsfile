@@ -12,7 +12,7 @@ echo .
 pushd %THISDIR%
 
 echo directory out --->
-dir 
+dir /s /b *.*
 
 popd
 
