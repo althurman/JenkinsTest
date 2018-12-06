@@ -9,7 +9,10 @@ echo .
 echo This dir is: %THISDIR%
 echo .
 
-pushd %THISDIR%\..\
+echo env variables
+set
+
+pushd %THISDIR%
 
 
 dir /s /b *.*
