@@ -1,3 +1,3 @@
 echo 'this message is for a pipeline'
 
-githubNotify description: 'This is a shorted example', targetUrl: 'https://my-jenkins-instance.com', status: 'SUCCESS'
+githubNotify description: 'This is a shorted example', targetUrl: 'https://165.88.230.11:8080', status: 'SUCCESS'
