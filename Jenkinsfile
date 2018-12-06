@@ -11,8 +11,13 @@ echo .
 
 echo env variables
 set
+echo .
+echo .
+echo .
+echo .
+echo .
 
-pushd %THISDIR%
+pushd %WORKSPACE%
 
 
 dir /s /b *.*
