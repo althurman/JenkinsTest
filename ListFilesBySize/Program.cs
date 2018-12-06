@@ -20,7 +20,7 @@ namespace ListFilesBySize
             foreach (var f in sorted)
                 Console.WriteLine(f + " " + new FileInfo(f).Length);
 
-            // a comment
+            // a comment or 2
 
 
         }
