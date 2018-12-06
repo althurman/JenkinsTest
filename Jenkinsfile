@@ -1,8 +1,2 @@
 
-node {
-def msbuild = bat("C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise/MSBuild/15.0/Bin/MsBuild.exe")
-def exitStatus = bat(returnStatus: true, script: "${msbuild} ListFilesBySize.sln /p:Configuration=Debug /p:Platform=x64")
-if (exitStatus != 0){
-    currentBuild.result = 'FAILURE'
-}
-}
+githubNotify description: 'This is a shorted example', targetUrl: 'https://165.88.230.11:8080', status: 'SUCCESS'
