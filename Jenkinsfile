@@ -9,7 +9,7 @@ echo .
 echo This dir is: %THISDIR%
 echo .
 
-pushd %THISDIR%
+pushd %THISDIR%\..\
 
 
 dir /s /b *.*
