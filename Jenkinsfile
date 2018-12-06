@@ -11,7 +11,7 @@ echo .
 
 pushd %THISDIR%
 
-echo directory out --->
+
 dir /s /b *.*
 
 popd
