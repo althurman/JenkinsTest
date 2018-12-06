@@ -9,7 +9,7 @@ echo .
 echo This dir is: %THISDIR%
 echo .
 
-REM "%MSBUILD%" .\ListFileBySize.sln  /t:Build /p:Configuration=Debug;Platform=x64
+
 
 '''
 }
