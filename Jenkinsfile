@@ -19,8 +19,7 @@ echo .
 
 pushd %WORKSPACE%
 
-
-dir /s /b *.*
+"%MSBUILD%" "%WORKSPACE%\ListFileBySize.sln"  /t:Build /p:Configuration=Debug;Platform=x64
 
 popd
 
