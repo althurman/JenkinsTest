@@ -9,6 +9,12 @@ echo .
 echo This dir is: %THISDIR%
 echo .
 
+pushd %THISDIR%
+
+echo directory out --->
+dir 
+
+popd
 
 
 '''
