@@ -7,5 +7,5 @@ node {
 		bat "\"${tool 'VS2017'}\"\\MsBuild.exe ListFilesBySize.sln /p:Configuration=Debug /p:Platform=\"x64\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
 
 	stage 'Archive'
-		archiveArtifacts artifacts: 'ListFilesBySize/bin/Debug/**', fingerprint: true
+		archiveArtifacts artifacts: '**', fingerprint: true
 }
