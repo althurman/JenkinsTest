@@ -1,3 +1,11 @@
-echo 'this message is for a pipeline'
+node {
+	stage 'Checkout'
+		checkout scm
 
-githubNotify description: 'This is a shorted example', targetUrl: 'https://165.88.230.11:8080', status: 'SUCCESS'
+	stage 'Build'
+		bat 'nuget restore SolutionName.sln'
+		bat "\"${tool 'MSBuild'}\" ListFilesBySize.sln /p:Configuration=Debug /p:Platform=\"x64\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
+
+	stage 'Archive'
+		archive 'ListFilesBySize/bin/Release/**'
+}
