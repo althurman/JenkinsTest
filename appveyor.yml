@@ -1,10 +1,6 @@
-version: 1.0.{build}
+version: 1.2.{build}
 build:
   verbosity: minimal
-
-branches: 
-    except: 
-    - "1234" #a dummy branch that does not exist 
   
 skip_branch_with_pr: false
 
