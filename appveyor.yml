@@ -1,3 +1,5 @@
+- echo This is an AppVeyor test by pki
+
 version: 1.0.{build}
 build:
   verbosity: minimal
