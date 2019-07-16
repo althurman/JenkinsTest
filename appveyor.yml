@@ -1,0 +1,19 @@
+version: 1.0.{build}
+build:
+  verbosity: minimal
+
+branches: 
+    except: 
+    - "1234" #a dummy branch that does not exist 
+  
+skip_branch_with_pr: false
+
+#---------------------------------#
+#    environment configuration    #
+#---------------------------------#
+
+# Build worker image (VM template)
+image: Visual Studio 2019
+
+- echo This is an AppVeyor test by pki
+- echo Perkin Elmer inc.
