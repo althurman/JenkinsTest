@@ -1,7 +1,8 @@
 version: 1.3.{build}
 build:  
-  project: ./ListFilesBySize.sln            
-  verbosity: detailed
+  project: ListFilesBySize.sln   
+  
+verbosity: detailed
   
 #skip_branch_with_pr: false
 
