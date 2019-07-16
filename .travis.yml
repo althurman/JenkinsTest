@@ -5,5 +5,5 @@ mono: none
 dotnet: 2.0.0
 
 script: 
-  - dotnet restore ./src/ReactiveDomain.sln
-  - dotnet msbuild ./src/ReactiveDomain.sln
+  - dotnet restore ./ListFilesBySize.sln
+  - dotnet msbuild ./ListFilesBySize.sln
