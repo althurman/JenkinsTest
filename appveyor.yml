@@ -1,5 +1,8 @@
 version: 1.3.{build}
 
+before_build:
+  - msbuild /t:restore ListFilesBySize.sln
+
 build:  
   project: ListFilesBySize.sln   
 
