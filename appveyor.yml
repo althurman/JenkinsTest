@@ -3,8 +3,6 @@ build:
   project: ListFilesBySize.sln   
   
 verbosity: detailed
-  
-#skip_branch_with_pr: false
 
 # Build worker image (VM template)
 image: Visual Studio 2019
