@@ -2,7 +2,7 @@ sudo: required
 language: csharp
 
 mono: none
-dotnet: 2.2
+dotnet: 2.1.300
 
 script: 
   - dotnet restore ./ListFilesBySize.sln
