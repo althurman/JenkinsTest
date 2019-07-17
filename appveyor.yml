@@ -1,9 +1,9 @@
 version: 1.3.{build}
+
 build:  
   project: ListFilesBySize.sln   
   
 verbosity: detailed
 
-# Build worker image (VM template)
 image: Visual Studio 2019
 
