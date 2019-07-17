@@ -3,7 +3,7 @@ os: windows
 language: csharp
 
 mono: none
-dotnet: 2.1.502
+dotnet: 2.1
 
 script: 
   - dotnet restore ./ListFilesBySize.sln
