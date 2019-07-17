@@ -2,7 +2,7 @@
 os: windows
 language: csharp
 
-# mono: none
+mono: none
 dotnet: 2.2.6
 
 script: 
