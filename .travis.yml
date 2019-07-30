@@ -8,3 +8,16 @@ mono: none
 script: 
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
+  
+artifacts:
+  - path: .\ListFiles\bin\**\*.nupkg
+    name: NuGet
+  
+deploy:
+  - provider: NuGet
+    server: https://www.myget.org/F/pki_invivo_private/api/v2/package
+    api_key:
+        secure: 2a2fa7fc-454d-4f18-b1d3-4723326d9f05
+    skip_symbols: true
+    on:
+        branch: master
