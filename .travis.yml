@@ -8,16 +8,14 @@ mono: none
 script: 
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
+#  - dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k secure: vfgvweftrer -s https://www.myget.org/F/pki_invivo_private/api/v2/package
   
-artifacts:
-  - path: .\ListFiles\bin\**\*.nupkg
-    name: NuGet
-  
-deploy:
-  - provider: NuGet
-    server: https://www.myget.org/F/pki_invivo_private/api/v2/package
-    api_key:
-        secure: 2a2fa7fc-454d-4f18-b1d3-4723326d9f05
-    skip_symbols: true
-    on:
-        branch: master
+# artifacts:
+#  - path: .\ListFiles\bin\**\*.nupkg
+#    name: NuGet
+#  
+#deploy:
+#  - provider: script
+#    script: deploy.sh
+#    on:
+#        branch: master
