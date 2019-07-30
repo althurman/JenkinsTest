@@ -8,7 +8,7 @@ mono: none
 script: 
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
-  - dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k PkiApiKey -s PkiPrivateFeed
+  - dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k $PkiApiKey -s $PkiPrivateFeed
   
 # artifacts:
 #  - path: .\ListFiles\bin\**\*.nupkg
