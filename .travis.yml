@@ -9,6 +9,7 @@ script:
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
   - dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k $nugetApiKey -s "https://api.nuget.org/v3/index.json"
+  - dir $TRAVIS_BUILD_DIR /S /B
   
 # artifacts:
 #  - path: .\ListFiles\bin\**\*.nupkg
