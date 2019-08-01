@@ -9,7 +9,7 @@ script:
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
   - echo $TRAVIS_BUILD_DIR
-  - powershell Get-ChildItem -Path $TRAVIS_BUILD_DIR/* -Recurse -Force
+  - powershell Get-ChildItem -Path C:\Users\travis\build\althurman\JenkinsTest\ListFiles\* -Recurse -Force
     #- dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k $nugetApiKey -s "https://api.nuget.org/v3/index.json"
   
 # artifacts:
