@@ -6,10 +6,22 @@ mono: none
 #dotnet: 2.0.0
 
 script: 
+  - echo $TRAVIS_BRANCH
+  - echo $TRAVIS_PULL_REQUEST
+  - echo $TRAVIS_PULL_REQUEST_BRANCH
+  - echo $TRAVIS_PULL_REQUEST_SHA
+  - echo $STABLE
   - dotnet restore ./ListFilesBySize.sln
   - dotnet msbuild ./ListFilesBySize.sln
-  - echo $TRAVIS_BUILD_DIR
-  - find $TRAVIS_BUILD_DIR
+  
+deploy:
+  provider: script
+  script: deploy.sh
+
+  
+  
+  
+  
     #- dotnet nuget push ./ListFiles/bin/Debug/ListFiles.1.0.0.nupkg -k $nugetApiKey -s "https://api.nuget.org/v3/index.json"
   
 # artifacts:

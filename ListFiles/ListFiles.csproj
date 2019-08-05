@@ -5,6 +5,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>A . Thurm</Authors>
     <Company />
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 </Project>
